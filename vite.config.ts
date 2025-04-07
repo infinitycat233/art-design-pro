@@ -24,6 +24,7 @@ export default ({ mode }) => {
     base: VITE_BASE_URL,
     server: {
       port: parseInt(VITE_PORT),
+      allowedHosts: ['.infinity-cat.top'],
       proxy: {
         '/api': {
           target: VITE_API_URL,
